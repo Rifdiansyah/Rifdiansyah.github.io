@@ -1,0 +1,153 @@
+body {
+	margin: 2px;
+	
+	
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: purple;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+li a:hover:not(.active) {
+  border-radius: 50%;
+}
+
+
+*{
+	margin: 2;
+	padding: 0;
+	font-family: sans-serif;
+}
+.about-section{
+	width: 100%%;
+	background: #f1f1f1;
+	padding: 40px 0;
+}
+.inner-width{
+	max-width: 1000px;
+	overflow: hidden;
+	padding: 0 20%;
+	margin: auto;
+}
+h1{
+	top: 20px;
+	position: absolut;
+	left: 100px;
+	text-align: center;
+}
+
+}
+.about{
+	padding-right: 30px;
+	left: 120px;
+}
+
+
+.about a:hover{
+	color: #fff;
+	background: #e74c3c;
+}
+
+formKomentar{
+    border: 50px solid #d1d1d1;
+    width:500px;
+    padding:10px;
+	border-color: red;
+}
+
+
+
+input, textarea{
+     padding: 10px;
+     border:3px solid #e6e6e6;
+     border-radius: 5px;
+     margin-bottom: 15px; 
+}
+
+input:focus, textarea:focus{
+    border:3px solid #5E4F4F;
+}
+ 
+textarea{
+  resize:none;
+  width:600px;
+  height:200px;
+   
+}
+
+input[type="text"], input[type="email"]{
+  resize:none;
+  width:600px;
+  height:25px;
+}
+
+input[type="submit"]{
+     cursor: pointer;
+     background: -webkit-linear-gradient(top, #efefef, #ddd);
+     background: -moz-linear-gradient(top, #efefef, #ddd);
+     background: -ms-linear-gradient(top, #efefef, #ddd);
+     background: -o-linear-gradient(top, #efefef, #ddd);
+     background: linear-gradient(top, #efefef, #ddd);
+     color: #333;
+     text-shadow: 0px 1px 1px rgba(255,255,255,1);
+     border: 1px solid #ccc;
+	 float: center;
+}
+ 
+input[type="submit"]:hover {
+     background: -webkit-linear-gradient(top, #eee, #ccc);
+     background: -moz-linear-gradient(top, #eee, #ccc);
+     background: -ms-linear-gradient(top, #eee, #ccc);
+     background: -o-linear-gradient(top, #eee, #ccc);
+     background: linear-gradient(top, #eee, #ccc);
+     border: 1px solid #bbb;
+	 float: center;
+}
