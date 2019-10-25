@@ -2,70 +2,59 @@
 <html lang="en" dir="ltr">
 <head>
 	<meta charset="utf-8">
-	<title>Pertanyaan</title>
+	<title>Hun.co.id - Pertanyaan</title>
 	<link rel="stylesheet" type="text/css" href="stylepertanyaan.css">
 	<meta name="viewport" content="width-device-width, initial scale=1.0">
 </head>
 <body>
-<ul>
-  <li><a href="index.html">Home</a></li>
-	<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Kategori</a>
-    <div class="dropdown-content">
-      <a href="#">SBMPTN</a>
-      <a href="#">Ujian Nasional</a>
-      <a href="#">Matematika</a>
-    </div>
-	<li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Event</a>
-    <div class="dropdown-content">
-      <a href="#">News</a>
-      <a href="#">Olimpiade</a>
-      <a href="#">Quiz Berhadiah</a>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about.html">About Us</a></li>
-  <li style="float:right"><a href="login.html">Login</a></li>
-  <li style="float:right"><a href="daftar.html">Daftar</a></li>
-</ul>
-</div>	
+	<ul>
+	  <li><a href="index.html">Home</a></li>
+		<li class="dropdown">
+		  <a href="javascript:void(0)" class="dropbtn">Kategori</a>
+		<div class="dropdown-content">
+		  <a href="listpertanyaan.html">SBMPTN</a>
+		  <a href="listpertanyaan.html">Ujian Nasional</a>
+		  <a href="listpertanyaan.html">Matematika</a>
+		</div>
+	  <li><a href="contact.html">Contact</a></li>
+	  <li><a href="about.html">About Us</a></li>
+	  <li style="float:right"><a href="login.html">Login</a></li>
+	  <li style="float:right"><a href="daftar.html">Daftar</a></li>
+	</ul>
 	<div class="about-section">
 	<div class="inner-width">
 		<h1>Ajukan Pertanyaanmu Sekarang<h1>
-	
-<form id="formquestion">
-  	<div>
-  	 <input type="text" name="nama" placeholder="Nama"/>
-  	</div>
-
-  	<div>
-  	 <textarea name="question" rows="10" placeholder="Tulis Pertanyaanmu Disini (Pertanyaan Simpel dan Jelas Lebih Cepat Terjawab)"></textarea>
-  	</div>
- 
-	<select name='pelajaran'>
-		<option value="pelajaran">-- Pilih Mata Pelajaran --</option>
-		<option value="Akuntansi">Akuntansi</option>
-		<option value="Bahasa Indonesia">Bahasa Indonesia</option>
-		<option value="Bahasa Inggris">Bahasa Inggris</option>
-		<option value="Biologi">Biologi</option>
-		<option value="Ekonomi">Ekonomi</option>
-		<option value="Geografi">Geografi</option>
-		<option value="Ipa">Ipa</option>
-		<option value="Kimia">Kimia</option>
-		<option value="Komputer">Komputer</option>
-		<option value="Penjas">Penjas</option>
-		<option value="Pkn">Pkn</option>
-		<option value="SBMPTN">SBMPTN</option>
-		<option value="Sejarah">sejarah</option>
-		<option value="Seni">Seni</option>
-		<option value="Ujian Nasional">Ujian Nasional</option>
-	  </select>
-	
-  	<div>
-  	  <input type="submit" value="Ajukan Pertanyaan"/>
-  	</div>
-  </form>
-		
+		<form id="formquestion">
+			<div>
+				<input type="text" name="nama" placeholder="Nama" placeholder="Nama" pattern="[a-zA-Z1-9]+" autofocus required oninvalid="this.setCustomValidity('Invalid! isikan hanya angka, huruf besar dan huruf kecil')"/>
+			</div>
+			<div>
+				<textarea name="question" rows="10" placeholder="Tulis Pertanyaanmu Disini (Pertanyaan Simpel dan Jelas Lebih Cepat Terjawab)" autofocus required></textarea>
+			</div>
+			<select name='pelajaran'>
+				<option value="pelajaran">-- Pilih Mata Pelajaran --</option>
+				<option value="Akuntansi">Akuntansi</option>
+				<option value="Bahasa Indonesia">Bahasa Indonesia</option>
+				<option value="Bahasa Inggris">Bahasa Inggris</option>
+				<option value="Biologi">Biologi</option>
+				<option value="Ekonomi">Ekonomi</option>
+				<option value="Geografi">Geografi</option>
+				<option value="Ipa">Ipa</option>
+				<option value="Kimia">Kimia</option>
+				<option value="Komputer">Komputer</option>
+				<option value="Penjas">Matematika</option>
+				<option value="Penjas">Penjas</option>
+				<option value="Pkn">Pkn</option>
+				<option value="SBMPTN">SBMPTN</option>
+				<option value="Sejarah">sejarah</option>
+				<option value="Seni">Seni</option>
+				<option value="Ujian Nasional">Ujian Nasional</option>
+			</select>
+			<div>
+				<input type="submit" value="Ajukan Pertanyaan"/>
+			</div>
+		</form>
 	</div>
- </div>
+	</div>
 </body>
 </html>
