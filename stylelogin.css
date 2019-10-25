@@ -1,3 +1,7 @@
+html, body{
+	height: 100%;
+}
+
 body{
     margin: 3px;
     padding: 0;
@@ -57,11 +61,14 @@ li.dropdown {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
 
 li a:hover:not(.active) {
   border-radius: 50%;
 }
+
 .login{
     width: 320px;
     height: 500px;
@@ -74,6 +81,7 @@ li a:hover:not(.active) {
     box-sizing: border-box;
     padding: 70px 30px;
 }
+
 .logo{
     width: 100px;
     height: 100px;
@@ -90,6 +98,7 @@ h1{
     text-align: center;
     font-size: 22px;
 }
+
 .login p{
     margin: 0;
     padding: 0;
@@ -109,6 +118,7 @@ h1{
     color: #fff;
     font-size: 16px;
 }
+
 .login input[type="submit"]
 {
 	width: 100%;
@@ -121,6 +131,7 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
+
 .login input[type="submit"]:hover
 {
     cursor: pointer;
@@ -133,67 +144,8 @@ h1{
     font-size: 14px;
     color: #fff;
 }
+
 .login a:hover
 {
     color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
