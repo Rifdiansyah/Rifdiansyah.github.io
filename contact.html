@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Hun.co.id - Contact</title>
+	<link rel="stylesheet" type="text/css" href="stylecontact.css">
+	<meta name="viewport" content="width-device-width, initial scale=1.0">
+</head>
+<body>
+<ul>
+  <li><a href="index.html">Home</a></li>
+	<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kategori</a>
+    <div class="dropdown-content">
+      <a href="listpertanyaan.html">SBMPTN</a>
+      <a href="listpertanyaan.html">Ujian Nasional</a>
+      <a href="listpertanyaan.html">Matematika</a>
+    </div>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About Us</a></li>
+  <li style="float:right"><a href="login.html">Login</a></li>
+  <li style="float:right"><a href="daftar.html">Daftar</a></li>
+</ul>
+</div>	
+	<div class="contact-section">
+	<div class="inner-width">
+		<h1> Contact Us</h1>
+	
+<form id="formcontact">
+  	<div>
+  	 <input type="text" name="nama" placeholder="Nama" pattern="[a-zA-Z1-9]+" 
+			autofocus required oninvalid="this.setCustomValidity('Invalid! isikan hanya angka, huruf besar dan huruf kecil')"/>
+  	</div>
+ 
+  	<div>
+  	 <input type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="this.setCustomValidity('example@mail.com')" autofocus required />
+    </div>
+ 
+  	<div>
+  	 <textarea name="Pesan" rows="10" placeholder="Pesan" autofocus required></textarea>
+  	</div>
+ 
+  	<div>
+  	  <input type="submit" value="Submit"/>
+  	</div>
+  </form>
+		
+	</div>
+ </div>
+</body>
+</html>
