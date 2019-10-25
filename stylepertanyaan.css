@@ -1,7 +1,7 @@
 body {
 	margin: 2px;
-	
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -48,40 +48,45 @@ li.dropdown {
   text-align: left;
 }
 
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
 
 li a:hover:not(.active) {
   border-radius: 50%;
 }
-
 
 *{
 	margin: 2;
 	padding: 0;
 	font-family: sans-serif;
 }
+
 .about-section{
-	width: 100%%;
+	width: 100%;
+	height: 600px;
 	background: #f1f1f1;
 	padding: 40px 0;
 }
+
 .inner-width{
 	max-width: 1000px;
 	overflow: hidden;
 	padding: 0 20%;
 	margin: auto;
 }
+
 p{
 	top: 20px;
 	position: absolut;
 	left: 100px;
 	text-align: center;
 }
+
 h1{
 	top: 20px;
 	position: absolut;
@@ -89,12 +94,10 @@ h1{
 	text-align: center;
 }
 
-}
 .about{
 	padding-right: 30px;
 	left: 120px;
 }
-
 
 .about a:hover{
 	color: #fff;
@@ -107,8 +110,6 @@ formquestion{
     padding:10px;
 	border-color: red;
 }
-
-
 
 input, textarea{
      padding: 10px;
@@ -136,10 +137,6 @@ input[type="text"]{
 
 option{
      cursor: pointer;
-     background: -webkit-linear-gradient(top, #efefef, #ddd);
-     background: -moz-linear-gradient(top, #efefef, #ddd);
-     background: -ms-linear-gradient(top, #efefef, #ddd);
-     background: -o-linear-gradient(top, #efefef, #ddd);
      background: linear-gradient(top, #efefef, #ddd);
      color: #333;
      text-shadow: 0px 1px 1px rgba(255,255,255,1);
@@ -148,10 +145,6 @@ option{
 
 input[type="submit"]{
      cursor: pointer;
-     background: -webkit-linear-gradient(top, #efefef, #ddd);
-     background: -moz-linear-gradient(top, #efefef, #ddd);
-     background: -ms-linear-gradient(top, #efefef, #ddd);
-     background: -o-linear-gradient(top, #efefef, #ddd);
      background: linear-gradient(top, #efefef, #ddd);
      color: #333;
      text-shadow: 0px 1px 1px rgba(255,255,255,1);
@@ -160,10 +153,6 @@ input[type="submit"]{
 }
  
 input[type="submit"]:hover {
-     background: -webkit-linear-gradient(top, #eee, #ccc);
-     background: -moz-linear-gradient(top, #eee, #ccc);
-     background: -ms-linear-gradient(top, #eee, #ccc);
-     background: -o-linear-gradient(top, #eee, #ccc);
      background: linear-gradient(top, #eee, #ccc);
      border: 1px solid #bbb;
 	 float: center;
