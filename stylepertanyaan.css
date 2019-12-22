@@ -2,6 +2,24 @@ body {
 	margin: 2px;
 }
 
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul.topnav li.icon {display: none;}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -68,9 +86,9 @@ li a:hover:not(.active) {
 
 .about-section{
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	background: #f1f1f1;
-	padding: 40px 0;
+	padding: 2% 0;
 }
 
 .inner-width{
@@ -88,6 +106,7 @@ p{
 }
 
 h1{
+	font-size:3vw;
 	top: 20px;
 	position: absolut;
 	left: 100px;
@@ -105,9 +124,9 @@ h1{
 }
 
 formquestion{
-    border: 50px solid #d1d1d1;
-    width:500px;
-    padding:10px;
+    border: 8% solid #d1d1d1;
+    width:83%;
+    padding:2%;
 	border-color: red;
 }
 
@@ -124,15 +143,14 @@ input:focus, textarea:focus{
  
 textarea{
   resize:none;
-  width:600px;
-  height:200px;
-   
+  width:180%;
+  height:33%;
 }
 
 input[type="text"]{
   resize:none;
-  width:600px;
-  height:25px;
+  width:100%;
+  height:4%;
 }
 
 option{
@@ -156,4 +174,29 @@ input[type="submit"]:hover {
      background: linear-gradient(top, #eee, #ccc);
      border: 1px solid #bbb;
 	 float: center;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
