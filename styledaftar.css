@@ -6,6 +6,24 @@ body{
     font-family: sans-serif;
 }
 
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul.topnav li.icon {display: none;}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -57,7 +75,9 @@ li.dropdown {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
 
 li a:hover:not(.active) {
   border-radius: 50%;
@@ -75,6 +95,7 @@ li a:hover:not(.active) {
     box-sizing: border-box;
     padding: 100px 30px;
 }
+
 .logo{
     width: 100px;
     height: 100px;
@@ -91,6 +112,7 @@ h1{
     text-align: center;
     font-size: 22px;
 }
+
 .signup p{
     margin: 0;
     padding: 0;
@@ -130,6 +152,7 @@ h1{
     font-size: 18px;
     border-radius: 20px;
 }
+
 .signup input[type="submit"]:hover
 {
     cursor: pointer;
@@ -142,9 +165,35 @@ h1{
     font-size: 14px;
     color: #fff;
 }
+
 .signup a:hover
 {
     color: red;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 
 
