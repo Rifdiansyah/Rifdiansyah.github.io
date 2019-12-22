@@ -1,9 +1,28 @@
 body {
 	font-family: Arial;
-  background: #f1f1f1;
+	background: #f1f1f1;
 	margin: 2px;
-	
 }
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul.topnav li.icon {display: none;}
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -65,36 +84,37 @@ li a:hover:not(.active) {
   box-sizing: border-box;
 }
 
-
 h5 {
-width: 200px;
+  font-size:1.2vw;
+  width: 200px;
   border : 2px;
   border-style: solid;
+  border-color: #ebebe0;
   border-width: 3px; 
 }
 
-
+p {
+  font-size:1.2vw;
+}
 
 .leftcolumn {   
   float: left;
   width: 25%;
 }
 
-
 .rightcolumn {
   float: left;
   width: 75%;
   background-color: #f1f1f1;
-  padding-left: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
-
 
 .card {
   background-color: white;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 2%;
+  margin-top: 2%;
 }
-
 
 .row:after {
   content: "";
@@ -107,11 +127,12 @@ input:focus, textarea:focus{
 }
 
 .card textarea{
-  resize: none;
-  width: 100%;
-  height: 200px;
    
+  resize:none;
+  width:180%;
+  height:33%;
 }
+   
 
 card input[type="submit"]{
 	 background: linear-gradient(top, #efefef, #ddd);
@@ -129,16 +150,42 @@ card input[type="submit"]:hover {
 }
 
 h1{
+	font-size:3vw;
 	text-align: center;
 }
 
 .card a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1vw;
     color: 000;
 }
 
 .card a:hover
 {
     color: red;
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
